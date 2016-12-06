@@ -1,0 +1,22 @@
+Notes on the project of coadding different observations
+-- written by Andreu Font-Ribera after discussions with Nicolas Busca and Julien Guy during the eBOSS / DESI meeting in OSU (Dec 5th 2016) --
+
+Possible plan for the coadding project:
+- It would be great to move the repository to IGMHub, and work in collaboration by starting issues and branches. 
+- It would be great to have a first version of the files soon, let us call it v0, available at NERSC and advertised in the working group. We should tag the distributed files, and the code used to generate it (v0).
+- We believe that these files should not be a replacement of DR14Q, since DR14Q will add extra information and will keep changing. So people will use DR14Q and these files, in combination, to do their analyses. For this reason, we thing we should drop some of the meta data in the master files, and leave only a map of THINGID --> HEALPIX_pixel. Everything else is already in DR14Q, no need to duplicate.
+- Once we have a more stable and tested version of the code / files (v1), we would put that in the eBOSS SAS system, so that everyone can access it without needing a NERSC account.
+
+Some things that could improve the v0 version of the files:
+- remove RA, DEC, Z, Z_ERROR... from the master file.
+- larger HEALPix pixels, so that we have a significantly smaller number of files, something of order 100.
+- option to generate files with only z > 2 quasars. 
+- Nicolas found 11k quasars in DR14Q with z>2 that are not in the HEAPix files.
+
+There is something that would be great to do for v0, but that if we think it might take too long we can leave for version_1:
+- Change the format so that we don't have so many HDUs. For instance, we could have an image for fluxes in all objects, an image with all ivar, an image with all masks... similar to the DESI brick files.
+
+For the future (v1) we propose:
+- Use single exposures, so that we don't need to use the BOSS or eBOSS single observation coadds. There is no need to coadd twice. 
+- Redefine how we reject bad observations, or whether we keep them all without rejecting anything.
+
