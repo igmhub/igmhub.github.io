@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Desihub.GitHub.io</title>
+    <title>IGMHUB</title>
   </head>
 
   <body>
@@ -16,10 +16,10 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/desihub">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/igmhub">View on GitHub</a>
 
-          <h1 id="project_title">Desihub.GitHub.io</h1>
-          <h2 id="project_tagline">DESI Data Systems Organization Web Pages</h2>
+          <h1 id="project_title">IGMHUB</h1>
+          <h2 id="project_tagline">IGM software tools</h2>
 
         </header>
     </div>
@@ -30,138 +30,15 @@
         <h3>
 <a id="data" class="anchor" href="#data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data</h3>
 
-<p>These packages form the data pipeline from target selection through final redshifts</p>
+<p>Blabla</p>
 
 <ul>
-<li>Target Selection
-
-<ul>
-<li>
-<a href="https://github.com/desihub/desitarget"><strong>desitarget</strong></a> : target selection based upon
-<a href="https://legacysurvey.org">Legacy Survey</a> tractor bricks</li>
-</ul>
-</li>
-<li>Survey Planning and Operations
-
-<ul>
-<li>
-<a href="https://github.com/desihub/fiberassign"><strong>fiberassign</strong></a> : fiber assignment; C++</li>
-<li>
-<a href="https://github.com/desihub/desisurvey"><strong>desisurvey</strong></a> : survey planning and implementation (e.g. next field selector)</li>
-<li>
-<a href="https://github.com/desihub/desietc"><strong>desietc</strong></a> : online real-time dynamic exposure time calculator</li>
-</ul>
-</li>
-<li>Spectro Pipeline
-
-<ul>
-<li>
-<a href="https://github.com/desihub/desispec"><strong>desispec</strong></a> : spectroscopic data processing algorithms and pipeline</li>
-<li>
-<a href="https://github.com/desihub/specex"><strong>specex</strong></a> : spectral PSF measurements (not DESI-specific)</li>
-<li>
-<a href="https://github.com/desihub/specter"><strong>specter</strong></a> : spectroperfectionism extractions (not DESI-specific)
-
-<ul>
-<li>also used for pixel-level simulations</li>
-</ul>
-</li>
-<li>
-<a href="https://bitbucket.org/redmonster/redmonster"><strong>redmonster</strong></a> : classifications and redshift fitting (not DESI-specific; on bitbucket)</li>
-</ul>
-</li>
+<li> Stacking quasar spectra , link to code repo </li>
+<li> Computing the deltas, link to code repo </li>
 </ul>
 
-<h3>
-<a id="core" class="anchor" href="#core" aria-hidden="true"><span class="octicon octicon-link"></span></a>Core</h3>
-
-<p>These are utility packages used by others</p>
-
-<ul>
-<li>
-<strong>desiutil</strong> : currently installation and versioning support; eventually will include logging,
-mask bit helper code, etc.</li>
-<li>
-<strong>desimodel</strong> : describes the key DESI hardware and survey parameters; mostly data with a little
-I/O helper code</li>
-<li>
-<strong>speclite</strong> : spectra utility routines that aren't DESI-specific</li>
-</ul>
-
-<h3>
-<a id="simulation" class="anchor" href="#simulation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simulation</h3>
-
-<p>These packages are for simulating DESI</p>
-
-<ul>
-<li>
-<a href="https://github.com/desihub/desispec"><strong>desispec</strong></a> : DESI-specific simulations, including
-
-<ul>
-<li>pixsim-desi : wraps specter for pixel-level simulations</li>
-<li>quickgen: wraps quicksim (soon specsim) to quickly generate pipeline-format output files</li>
-<li>quickbrick: (coming soon)</li>
-<li>quickcat: (coming soon)</li>
-</ul>
-</li>
-<li>
-<a href="https://github.com/desihub/specter"><strong>specter</strong></a> : pixel-level raw data simulations (not DESI-specific)
-
-<ul>
-<li>also used for spectroperfectionism extractions</li>
-</ul>
-</li>
-<li>
-<a href="https://github.com/desihub/specsim"><strong>specsim</strong></a> : quick spectrum -&gt; spectrum simulator of throughput, noise,
-and resolution (not DESI-specific)</li>
-</ul>
-
-<h3>
-<a id="infrastructure" class="anchor" href="#infrastructure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Infrastructure</h3>
-
-<ul>
-<li><strong>desimodules</strong></li>
-<li><strong>desidatamodel</strong></li>
-<li><strong>desitemplate</strong></li>
-<li><strong>desitree</strong></li>
-<li><strong>desiBackup</strong></li>
-</ul>
-
-<h3>
-<a id="analysis" class="anchor" href="#analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Analysis</h3>
-
-<ul>
-<li><strong>imaginglss</strong></li>
-<li><strong>LSS</strong></li>
-</ul>
-
-<h3>
-<a id="external-dependencies" class="anchor" href="#external-dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>External Dependencies</h3>
-
-<ul>
-<li>numpy</li>
-<li>scipy</li>
-<li>astropy</li>
-<li>pyyaml</li>
-<li>requests</li>
-<li>fitsio</li>
-<li>needed for certain features
-
-<ul>
-<li>matplotlib / pylab</li>
-<li>h5py</li>
-</ul>
-</li>
-<li>under consideration
-
-<ul>
-<li>psycopg2</li>
-</ul>
-</li>
-</ul>
-
-<p>The graph below summarizes the relationships between the packages mentioned above:</p>
-<p><img src="images/packages.png" alt="Graph of DESI Data Systems Packages"></p>
+	<p>Add link to a google document or an image </p>
+	
       </section>
     </div>
 
